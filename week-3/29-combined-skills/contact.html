@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="/css/combined-skills.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
     <div class="site-wrapper">
-      <div class="site-header">
+      <header class="site-header">
         <div class="site-header__title">C.Y.F</div>
-        <div class="main-nav">
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
               <a href="index.html">Latest</a>
@@ -26,7 +25,7 @@
               <a href="contact.html">Contact</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <form class="site-search" action="/search">
           <label for="search-input">
             Search
@@ -48,7 +47,7 @@
           </svg>
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </header>
 
       <main>
         <h1>Contact Us</h1>
@@ -56,13 +55,37 @@
         <form method="GET" class="contact-form">
           <div class="contact-form__field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required />
           </div>
           <div class="contact-form__field">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required />
+          </div>
+          <div class="contact-form__field">
+            <label for="message">Message</label>
             <textarea
+              id="message"
               name="message"
               placeholder="Your message should not be longer than 200 words."
+              required
             ></textarea>
+          </div>
+          <div class="contact-form__field">
+            <fieldset>
+              <legend>What branch are you interested in?</legend>
+              <label for="london">
+                <input type="radio" name="branch" id="london" />
+                London </label
+              ><br /><br />
+              <label for="Glasgow ">
+                <input type="radio" name="branch" id="Glasgow" />
+                Glasgow </label
+              ><br /><br />
+              <label for="Manchester ">
+                <input type="radio" name="branch" id="Manchester" />
+                Manchester </label
+              ><br />
+            </fieldset>
           </div>
           <button type="submit">Send</button>
         </form>

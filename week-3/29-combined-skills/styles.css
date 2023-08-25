@@ -1,1 +1,45 @@
-/* Add your own CSS code below */
+#spanHeart {
+  color: #c85308;
+}
+
+@media screen and (min-width: 992px) {
+  .hero__title {
+    font-size: 4rem;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 767px) {
+  .site-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .views {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .view-list__item {
+    margin: 10px;
+  }
+  .views__all {
+    margin-left: auto;
+  }
+}
+
+site-content {
+  display: flex;
+  justify-content: center;
+}
+.main-article {
+  max-width: 50em;
+}
+.main-article p {
+  line-height: 2;
+}

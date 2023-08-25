@@ -1,5 +1,43 @@
 .countries {
   display: flex;
 }
-
 /* Add your own CSS code below */
+.countries--first {
+  align-items: end;
+  justify-content: end;
+}
+.countries--second {
+  align-items: end;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.countries--third {
+  align-items: start;
+  justify-content: center;
+}
+.countries--third :nth-child(1) {
+  align-self: end;
+}
+.countries--fourth {
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.countries--fourth :nth-child(3) {
+  align-self: center;
+}
+.countries--fourth :nth-child(4) {
+  align-self: center;
+}
+.countries--fifth {
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: end;
+}
+.countries--fifth :nth-child(5) {
+  order: 0;
+  align-self: center;
+}
+.countries--fifth :nth-child(4) {
+  order: 1;
+}
